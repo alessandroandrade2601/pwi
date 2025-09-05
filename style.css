@@ -1,20 +1,19 @@
-/* Fuente moderna */
+/* General */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
   background: #f8f9fa;
   color: #333;
   line-height: 1.6;
 }
 
-/* Header con fondo */
+/* Hero con fondo universidad */
 .hero {
   position: relative;
   background: url("assets/esan.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .hero .overlay {
@@ -30,7 +29,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 10px;
   text-shadow: 2px 2px 5px black;
 }
@@ -40,20 +39,37 @@ body {
   font-size: 1.2rem;
 }
 
-/* Contenido principal */
-main {
-  max-width: 1000px;
-  margin: 20px auto;
-  padding: 0 15px;
+/* Sobre mí */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background: white;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Tarjetas */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff;
+}
+
+/* Tarjetas generales */
 .card {
   background: white;
-  padding: 25px;
-  margin-bottom: 20px;
+  padding: 30px;
+  margin: 30px auto;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -66,35 +82,20 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Sobre mí */
-.about {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #007bff;
-}
-
-/* Etiquetas tecnologías */
+/* Tecnologías */
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
+  justify-content: center;
 }
 
 .tags span {
   background: #007bff;
   color: white;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 0.95rem;
   transition: background 0.3s;
 }
 
@@ -102,40 +103,55 @@ h2 {
   background: #0056b3;
 }
 
-/* Proyectos */
+/* Proyectos con fondo de software */
+.projects-section {
+  position: relative;
+  background: url("assets/software.jpg") no-repeat center center/cover;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+.projects-section .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.projects-section h2 {
+  position: relative;
+  z-index: 2;
+  color: #00d4ff;
+}
+
 .projects {
+  position: relative;
+  z-index: 2;
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .project {
-  background: #f9f9f9;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.3s;
-  width: 250px;
-}
-
-.project img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+  min-width: 200px;
+  transition: transform 0.3s, background 0.3s;
 }
 
 .project a {
-  display: block;
-  padding: 10px;
-  color: #007bff;
-  font-weight: 500;
+  color: #00d4ff;
+  font-weight: bold;
   text-decoration: none;
 }
 
 .project:hover {
   transform: translateY(-5px);
+  background: rgba(255,255,255,0.2);
 }
 
 /* Footer */
@@ -151,7 +167,7 @@ footer a {
   color: #00d4ff;
   text-decoration: none;
 }
-
 footer a:hover {
   text-decoration: underline;
 }
+
