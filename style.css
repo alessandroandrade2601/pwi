@@ -10,7 +10,7 @@ body {
 /* Hero con fondo universidad */
 .hero {
   position: relative;
-  background: url("assets/esan.jpg") no-repeat center center/cover;
+  background: url("images/esan.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 120px 20px;
@@ -106,7 +106,7 @@ h2 {
 /* Proyectos con fondo de software */
 .projects-section {
   position: relative;
-  background: url("assets/software.jpg") no-repeat center center/cover;
+  background: url("images/software.jpg") no-repeat center center/cover;
   padding: 80px 20px;
   color: white;
   text-align: center;
