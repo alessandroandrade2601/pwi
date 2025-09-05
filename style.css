@@ -62,6 +62,7 @@ body {
     font-size: 15px;
 }
 
+
 /* Secciones */
 .details h2 {
     color: #00aaff;
@@ -116,4 +117,8 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
+}
+
+.gallery h3 {
+  margin-bottom: 20px; /* agrega espacio debajo del título */
 }
